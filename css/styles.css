@@ -7,6 +7,7 @@
   --second-background-color: #f5f4fa;
   --dark-background-color: #2f303a;
   --second-white-color: rgba(255, 255, 255, 0.6);
+  --button-hover-color: #188ce8;
 }
 
 body {
@@ -90,14 +91,15 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  border-color: transparent;
+  border-radius: 4px;
   letter-spacing: 0.06em;
   cursor: pointer;
 }
 
 .button:hover,
 .button:focus {
-  color: var(--title-text-color);
-  background-color: var(--second-background-color);
+  background-color: var(--button-hover-color);
 }
 
 /* --------feature---------- */
@@ -139,10 +141,6 @@ ul {
 }
 /* -----------team----------- */
 
-.team {
-  background-color: var(--second-background-color);
-}
-
 .team-title {
   color: var(--title-text-color);
   font-weight: 500;
@@ -177,6 +175,11 @@ ul {
   text-decoration: none;
 }
 
+.footer-address:hover,
+.footer-address:focus {
+  color: var(--accent-color);
+}
+
 .footer-link {
   color: var(--second-white-color);
   font-style: normal;
@@ -185,6 +188,10 @@ ul {
   text-decoration: none;
 }
 
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
+}
 /* ------------ portfolio ------------- */
 
 .portfolio-button {
@@ -193,7 +200,9 @@ ul {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.62;
+  border-color: transparent;
+  border-radius: 4px;
   cursor: pointer;
 }
 
