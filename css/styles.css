@@ -1,33 +1,18 @@
-/*колір заголовків #212121; */
-
-/* колір параграфів, основний колір  #757575; */
-
-/* колір білого тексту, фон білий  #FFFFFF; */
-
-/* колір акценту #2196F3; */
-
-/* фон основний  #F5F5F5; */
-
-/* другий колір фону  #F5F4FA; */
-
-/* фон темний колір #2F303A; */
-
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --black-color: #000000;
   --primary-white-color: #ffffff;
-  --primary-background-color: #f5f5f5;
   --second-background-color: #f5f4fa;
   --dark-background-color: #2f303a;
+  --second-white-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  line-height: 1, 71;
   letter-spacing: 0.03em;
 }
 
@@ -38,20 +23,15 @@ ul {
 /* --------header-------- */
 
 .logo {
-  color: var(--title-text-color);
+  color: var(--black-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1, 19;
+  line-height: 1.19;
   text-decoration: none;
 }
 
 .accent {
-  color: var(--accent-color);
-}
-
-.logo:hover,
-.logo:focus {
   color: var(--accent-color);
 }
 
@@ -63,7 +43,7 @@ ul {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
@@ -77,7 +57,7 @@ ul {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
@@ -97,7 +77,7 @@ ul {
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
-  line-height: 1, 36;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -109,22 +89,15 @@ ul {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1, 88;
+  line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
 }
 
-/* --------section---------- */
-
-.section {
-  background-color: var(--primary-background-color);
-}
-.section-title {
+.button:hover,
+.button:focus {
   color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1, 16;
-  text-align: center;
+  background-color: var(--second-background-color);
 }
 
 /* --------feature---------- */
@@ -146,12 +119,24 @@ ul {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   text-transform: uppercase;
+}
+
+.feature-text {
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 /* ----------work------------ */
 
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
 /* -----------team----------- */
 
 .team {
@@ -162,11 +147,11 @@ ul {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 19;
+  line-height: 1.19;
 }
 .team-text {
   font-size: 16px;
-  line-height: 1, 19;
+  line-height: 1.19;
 }
 
 /* -----------footer------------ */
@@ -178,22 +163,26 @@ ul {
 .footer-logo {
   color: var(--primary-white-color);
   font-family: Raleway, sans-serif;
-
   font-weight: 700;
   font-size: 26px;
-  line-height: 1, 19;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.footer-address {
+  color: var(--primary-white-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
   text-decoration: none;
 }
 
 .footer-link {
-  color: var(--primary-white-color);
+  color: var(--second-white-color);
   font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
   text-decoration: none;
-}
-
-.footer-link:hover,
-.footer-link:focus {
-  color: var(--accent-color);
 }
 
 /* ------------ portfolio ------------- */
@@ -204,7 +193,7 @@ ul {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 6;
+  line-height: 1.6;
   cursor: pointer;
 }
 
@@ -216,6 +205,7 @@ ul {
 
 .project-link {
   text-decoration: none;
+  color: inherit;
 }
 
 .project-title {
@@ -228,6 +218,5 @@ ul {
 
 .project-text {
   font-size: 16px;
-  line-height: 1, 88;
-  color: var(--primary-text-color);
+  line-height: 1.88;
 }
